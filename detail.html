@@ -1,0 +1,9 @@
+{% if course.pk is 1 %}
+<hr><a href="https://www.edureka.co/data-science-python-certification-course">{{course.coursename}}</a></h1>
+{% elif course.pk is 2 %}
+<h1><a href="https://www.edureka.co/java-j2ee-training-course">{{course.isname}}</a></h1>
+<h2>{{course.insname}}</h2>>
+{% else %}
+<h1>{{course.coursename}}</h1>
+<h2>{{course.insname}}</h2>>
+{% endif %}
